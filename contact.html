@@ -26,8 +26,43 @@
     </nav>
 </header>
 <main>
-    <h1>Contactez-nous</h1>
+    <section class="contact-section">
+        <h2>Contactez-moi</h2>
+        
+        <div class="contact-container">
+            <!-- Formulaire -->
+            <form action="#" method="POST" class="contact-form">
+                <div class="field">
+                    <label for="nom">Nom complet</label>
+                    <input type="text" id="nom" name="nom" placeholder="Votre nom" required>
+                </div>
+                <div class="field">
+                    <label for="tel">Téléphone</label>
+                    <input type="tel" id="tel" name="tel" placeholder="Votre numéro de téléphone" required>
+                </div>
+                <button type="submit" class="send-btn">Envoyer le message</button>
+            </form>
+
+            <!-- Infos de contact -->
+            <div class="contact-details">
+                <h3>Mes coordonnées</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Basée à : <strong>Lubumbashi</strong></p>
+                <p><i class="fas fa-phone"></i> Téléphone : +243 975 937 733</p>
+                
+                <div class="direct-links">
+                    <a href="https://wa.me" target="_blank" class="link-btn whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i> WhatsApp
+                    </a>
+                    <a href="https://t.me" target="_blank" class="link-btn telegram">
+                        <i class="fa-brands fa-telegram"></i> Telegram
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
 </main>
+
+   
 <footer>
 
     <p>&copy;2026 Josline.Tous droits réservés</p>

@@ -205,4 +205,430 @@ footer a:hover {
     color: var(--orange-vif);
     transform: translateY(-3px);
 }
+
+.contact-section {
+    max-width: 1000px;
+    margin: 6rem auto;
+    padding: 0 2rem;
+}
+
+.contact-container {
+    display: flex;
+    gap: 4rem;
+    background: white;
+    padding: 3rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    margin-top: 3rem;
+}
+
+.contact-form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.field label {
+    font-weight: 600;
+    color: var(--gris-tres-foncé);
+}
+
+.field input {
+    padding: 12px;
+    border: 2px solid var(--gris-clair);
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.field input:focus {
+    border-color: var(--violet-doux);
+}
+
+.send-btn {
+    background-color: var(--violet-doux);
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+.send-btn:hover {
+    background-color: var(--violet-foncé);
+}
+
+.contact-details {
+    flex: 1;
+    border-left: 1px solid var(--gris-clair);
+    padding-left: 3rem;
+}
+
+.contact-details h3 {
+    margin-bottom: 2rem;
+    color: var(--violet-doux);
+    font-size: 1.8rem;
+}
+
+.contact-details p {
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-details i {
+    color: var(--violet-doux);
+    font-size: 1.2rem;
+}
+
+.direct-links {
+    margin-top: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.link-btn {
+    text-decoration: none;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-weight: 600;
+    transition: transform 0.2s;
+}
+
+.link-btn:hover {
+    transform: scale(1.02);
+}
+
+.whatsapp { background-color: #25D366; }
+.telegram { background-color: #0088cc; }
+
+/* --- SECTION PROJETS --- */
+
+.projet {
+    padding: 60px 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #f9f9fb; /* Fond léger pour faire ressortir les cartes */
+}
+
+.projet h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    color: var(--violet-doux);
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Grille Responsive */
+.parent {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 40px;
+}
+
+/* Style de chaque Article (Carte) */
+.article {
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.article:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* Image du projet */
+.article img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-bottom: 3px solid var(--violet-doux);
+}
+
+/* Contenu textuel */
+.enfant {
+    padding: 25px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.enfant h3 {
+    margin-bottom: 12px;
+    font-size: 1.4rem;
+    color: var(--violet-doux);
+}
+
+.enfant p {
+    color:var(--gris-foncé);
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+/* Badges de technologies (le conteneur .span) */
+.span {
+    margin-top: auto;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
    
+}
+
+.span span {
+
+    background: var(--gris-clair);
+    color: var(--violet-doux);
+    padding: 4px 12px;
+    border-radius: 50px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+  
+}
+
+/* Liens d'action (Code & Démo) */
+.lien {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #eee;
+    padding-top: 15px;
+}
+
+.lien a {
+    text-decoration: none;
+    color: var(--gris-trés-foncé);
+    font-weight: 600;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: color 0.2s;
+}
+
+.lien a i {
+    font-size: 1.1rem;
+}
+
+.lien a:hover {
+    color: var(--violet-doux);
+}
+
+/* --- PAGE DIVERTISSEMENT (STYLE PROJET STRICT) --- */
+
+.projet {
+    padding: 40px 5%;
+    max-width: 1400px; /* Élargi pour accueillir 4 cartes confortablement */
+    margin: auto;
+}
+
+.projet h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+    color: var(--violet-doux);
+}
+
+/* Grille forcée à 4 colonnes sur les grands écrans */
+.parent {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 cartes par ligne */
+    gap: 20px;
+}
+
+/* Adaptation pour tablettes (2 par ligne) et mobiles (1 par ligne) */
+@media (max-width: 1024px) {
+    .parent {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .parent {
+        grid-template-columns: 1fr;
+    }
+}
+
+.article {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.article:hover {
+    transform: translateY(-5px);
+}
+
+/* Image grande respectant le ratio */
+.image-grande img {
+    width: 100%;
+    height: 250px; 
+    object-fit: cover;
+}
+
+.enfant {
+    padding: 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.enfant h3 {
+    margin-bottom: 10px;
+    color: var(--violet-doux);
+    font-size: 1.3rem;
+}
+
+.enfant p {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+/* Style des badges (tags) identique aux projets */
+.span {
+    margin-top: auto; /* Aligne les badges en bas */
+}
+
+.span span {
+    background: #e1e8ed;
+    color: var(--violet-doux);
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    margin-right: 5px;
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+/* --- MISE EN PAGE À 3 CARTES --- */
+
+.projet {
+    padding: 60px 5%;
+    max-width: 1200px; /* Largeur optimale pour 3 cartes */
+    margin: 0 auto;
+    background-color: #f9f9fb;
+}
+
+.projet h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    color: var(--violet-doux);
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Grille forcée à 3 colonnes */
+.parent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Exactement 3 cartes par ligne */
+    gap: 30px; /* Espace équilibré pour 3 colonnes */
+}
+
+/* Responsivité pour tablettes et mobiles */
+@media (max-width: 1024px) {
+    .parent {
+        grid-template-columns: repeat(2, 1fr); /* 2 cartes sur tablette */
+    }
+}
+
+@media (max-width: 700px) {
+    .parent {
+        grid-template-columns: 1fr; /* 1 carte sur mobile */
+    }
+}
+
+/* Style des cartes (Article) */
+.article {
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.article:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* Image */
+.article img, .image-grande img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-bottom: 3px solid var(--violet-doux);
+}
+
+/* Contenu */
+.enfant {
+    padding: 25px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.enfant h3 {
+    margin-bottom: 12px;
+    font-size: 1.4rem;
+    color: var(--violet-doux);
+}
+
+.enfant p {
+    color: var(--gris-foncé);
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+/* Badges */
+.span {
+    margin-top: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.span span {
+    background: var(--gris-clair);
+    color: var(--violet-doux);
+    padding: 4px 12px;
+    border-radius: 50px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
